@@ -28,6 +28,7 @@
     "prepare:optimism": "mustache config/optimism.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
     "prepare:kovan": "npm run verify-abis kovan && mustache config/kovan.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
     "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
+    "prepare:goerli-ci": "mustache config/goerli-ci.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
     "prepare:arbitrum-goerli": "mustache config/arbitrum-goerli.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
     "prepare:arbitrum-one": "mustache config/arbitrum-one.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
     "verify-abis": "node config/verify-abis.js",
@@ -36,8 +37,8 @@
     "prettier:fix": "prettier --write \"./**/*.{js,jsx,ts,tsx}\""
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "0.25.0",
-    "@graphprotocol/graph-ts": "0.25.0",
+    "@graphprotocol/graph-cli": "0.27.0",
+    "@graphprotocol/graph-ts": "0.27.0",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "eslint": "^8.10.0",
